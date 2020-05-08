@@ -1,0 +1,71 @@
+/*Stylesheet for the fullscreen landing page project*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.intro {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: url("background.jpg");
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.content {
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 500%;
+	color: white;
+	text-shadow: 1px 0px 4px;
+}
+
+.btn {
+	font-family: 'Jost', sans-serif;
+	font-size: 175;
+	text-decoration: none;
+	color: white;
+	border: 3px solid white;
+	padding: 10px 25px;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.btn:hover {
+	color: yellow;
+	border: 3px solid yellow;
+}
+
+p {
+	font-size: 160%;
+	line-height: 150%;
+	text-align: justify;
+	font-family: sans-serif;
+}
+
+/*Media Query for tablet sized screens and smaller*/
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 250%;
+	}
+
+	p {
+		font-size: 100%;
+		line-height: 150%;
+	}
+}
